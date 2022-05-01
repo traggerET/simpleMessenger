@@ -95,6 +95,7 @@ func main() {
 
 	done := make(chan os.Signal, 1)
 	signal.Notify(done, os.Interrupt, syscall.SIGINT, syscall.SIGTERM)
+
 	defer func() {
 		err = msgr.ShutDown()
 		if err != nil {
