@@ -10,6 +10,8 @@ Chats are for multiple participants.
 The app itself works like interactive menu manager: 
 You choose options and fall down the next level of menu.
 
+Chat history will be written to specified file. 
+
 ## How does it work?
 
 Server/Client communication is implemented via RPC connection.
